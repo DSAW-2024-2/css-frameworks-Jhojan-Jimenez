@@ -10,78 +10,88 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <style>
+      body {
+        background-color: rgb(255, 255, 225);
+      }
+      @media (min-width: 1024px) {
+        body {
+          background-image: url("../assets/design/background.jpg");
+          background-size: 100% 100%;
+        }
+
+        #card-container {
+          box-shadow: 0 0 1.5rem rgb(197, 196, 196);
+          min-height: 60vh;
+        }
+      }
+    </style>
   </head>
-  <body
-    class="d-flex align-items-center justify-content-center"
-    style="
-      min-height: 100vh;
-      padding: 1rem 0.5rem;
-      background-color: rgb(255, 255, 225);
-    "
-  >
-    <div></div>
-    <div class="card border-none" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-sm-6">
-          <picture>
-            <source
-              media="(min-width: 576px)"
-              srcset="../assets/images/image-product-desktop.jpg"
-            />
-            <img
-              src="../assets/images/image-product-mobile.jpg"
-              class="img-fluid rounded-start"
-              alt="Img"
-            />
-          </picture>
-        </div>
-        <div class="col-sm-6">
-          <div class="card-body">
-            <h6
-              class="card-subtitle mb-2 text-muted"
-              style="
-                font-weight: 100;
-                font-family: 'Courier New', Courier, monospace;
-              "
-            >
-              Perfume
-            </h6>
-            <h5
-              class="card-title"
-              style="
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: 900;
-                font-size: 2rem;
-              "
-            >
-              Gabrielle Essence Eau De Parfum
-            </h5>
-            <p class="card-text">
-              A flora, solar and voluptuous interpretation composed by Olivier
-              Polge, Perfumer-Creator for the house of CHANEL.
-            </p>
-            <div class="card-text d-flex align-items-start gap-3">
-              <span
-                class="text-success display-6 p-0 pb-2"
+  <body class="d-flex align-items-center justify-content-center min-vh-100">
+    <div
+      id="card-container"
+      class="d-flex align-items-center justify-content-center container-lg p-3"
+      style="background-color: rgba(255, 255, 225, 0.756)"
+    >
+      <div class="card border-none" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-sm-6">
+            <picture>
+              <source
+                media="(min-width: 576px)"
+                srcset="../assets/images/image-product-desktop.jpg"
+              />
+              <img
+                src="../assets/images/image-product-mobile.jpg"
+                class="img-fluid rounded-start"
+                alt="Img"
+              />
+            </picture>
+          </div>
+          <div class="col-sm-6">
+            <div class="card-body">
+              <h6
+                class="card-subtitle mb-2 text-muted"
+                style="
+                  font-weight: 100;
+                  font-family: 'Courier New', Courier, monospace;
+                "
+              >
+                Perfume
+              </h6>
+              <h5
+                class="card-title"
                 style="
                   font-family: 'Times New Roman', Times, serif;
                   font-weight: 900;
+                  font-size: 2rem;
                 "
-                >$149.99</span
               >
-              <span class="display-8 text-muted">
-                <del>$169,99</del>
-              </span>
-            </div>
+                Gabrielle Essence Eau De Parfum
+              </h5>
+              <p class="card-text">
+                A flora, solar and voluptuous interpretation composed by Olivier
+                Polge, Perfumer-Creator for the house of CHANEL.
+              </p>
+              <div class="card-text d-flex align-items-start gap-3">
+                <span
+                  class="text-success display-6 p-0 pb-2"
+                  style="
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: 900;
+                  "
+                  >$149.99</span
+                >
+                <span class="display-8 text-muted">
+                  <del>$169,99</del>
+                </span>
+              </div>
 
-            <button
-              type="button"
-              class="btn btn btn-success p-2"
-              style="width: 100%"
-            >
-              <img src="../assets/images/icon-cart.svg" alt="cart-img" />
-              Add to Cart
-            </button>
+              <button type="button" class="btn btn btn-success p-2 w-100">
+                <img src="../assets/images/icon-cart.svg" alt="cart-img" />
+                Add to Cart
+              </button>
+            </div>
           </div>
         </div>
       </div>
